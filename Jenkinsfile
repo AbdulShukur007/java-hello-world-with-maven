@@ -14,6 +14,7 @@ pipeline{
         stage('build'){
             steps{
                sh 'mvn versions:display-dependency-updates'
+               // sh 'mvn clean deploy -Dmaven.test.skip=true'
             }
         }
     }
