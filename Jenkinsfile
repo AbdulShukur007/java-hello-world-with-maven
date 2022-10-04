@@ -8,12 +8,12 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'github access', url: 'https://github.com/AbdulShukur007/java-hello-world-with-maven.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/AbdulShukur007/java-hello-world-with-maven.git']]])
             }
         }
         stage('build'){
             steps{
-               sh 'mvn package'
+               sh 'mvn versions:display-dependency-updates'
             }
         }
     }
