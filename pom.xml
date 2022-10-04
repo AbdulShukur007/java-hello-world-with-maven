@@ -8,7 +8,8 @@
     <version>0.1.1</version>
 
     <!-- tag::joda[] -->
-     <properties>
+     <properties>      
+           <commons-compress-version>1.15</commons-compress-version>
            <java.version>1.8</java.version>
            <maven.compiler.source>1.6</maven.compiler.source>
            <maven.compiler.target>1.6</maven.compiler.target>
@@ -20,6 +21,31 @@
                <artifactId>joda-time</artifactId>
                <version>2.2</version>
            </dependency>
+           <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.3</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>4.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-compress</artifactId>
+        <version>${commons-compress-version}</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-beanutils</groupId>
+        <artifactId>commons-beanutils</artifactId>
+        <version>1.9.1-SNAPSHOT</version>
+    </dependency>
        </dependencies>
        <!-- end::joda[] -->
        
