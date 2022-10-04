@@ -6,6 +6,13 @@
     <artifactId>jb-hello-world-maven</artifactId>
     <packaging>jar</packaging>
     <version>0.1.1</version>
+    
+   <!-- <distributionManagement>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://url:8081/repositories/snapshots</url>
+    </snapshotRepository>
+    </distributionManagement> -->
 
     <!-- tag::joda[] -->
      <properties>      
